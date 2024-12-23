@@ -1,0 +1,91 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 650px;
+    height: 800px;
+    background:  #E6E6E6;
+    border-radius: 15px;
+    padding: 45px 60px;
+    display: grid;
+    grid-template-rows: 66px 711px;
+    gap: 22px;
+}
+
+.app_controls {
+    display: grid;
+    grid-template-columns: auto 160px;
+}
+
+.app_controls_input {
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.app_controls_input:focus-visible {
+    outline: 0;
+}
+
+.app_controls_button {
+    border: none;
+    background: #FBCC28;
+    border-radius: 0 10px 10px 0;
+    font-size: 18px;
+}
+
+.app_list {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.app_list_item {
+    background: #FFEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.app_list_btn {
+    background: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.app_list_btn:hover {
+    background: red;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.app_list_checkbox {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.app_list_item_txt {
+    margin: 0;
+    flex-grow: 1;
+    overflow-x: auto;
+}
+
+.app_list_item_done {
+    background: #EBFFED;
+    text-decoration: line-through;
+}
